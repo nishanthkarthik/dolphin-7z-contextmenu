@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+Icon=document-open
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-7z-compressed;application/x-rar-compressed;application/zip;
+Actions=extract;
+Encoding=UTF-8
+
+[Desktop Action extract]
+Name=Extract with 7z
+Icon=document-new
+Exec=bash -c '7z x "%f" && notify-send "7z Dolphin" "Extraction of %f done"'
